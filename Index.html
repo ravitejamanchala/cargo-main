@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="top-banner" role="banner">
+            <span>Information banner or ticker</span>
+            <div class="top-links" role="navigation" aria-label="Top Links">
+                <a href="#">Page Link</a>
+                <a href="#">Page Link</a>
+            </div>
+        </div>
+        <nav class="flex align-item-center navbar no-wrap" role="navigation" aria-label="Main Navigation">
+            <div class="logo" tabindex="0" role="img" aria-label="Company Logo">
+                <!-- logo -->
+                <svg width="104" height="33" viewBox="0 0 104 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.7011 8.16603C15.4394 5.87745 14.1344 4.35261 10.9138 4.35261C7.25763 4.35261 5.47342 7.4483 5.47342 10.9935C5.47342 14.5827 7.12732 17.635 11.219 17.635C14.0041 17.635 15.1352 16.3783 15.7447 14.2701H20.4884C19.8353 18.6209 16.746 21.9874 10.8702 21.9874C4.25556 21.9874 0.729736 16.693 0.729736 10.9935C0.729736 5.34007 4.25556 -0.000274658 10.8271 -0.000274658C17.4417 -0.000274658 20.1405 4.12783 20.4448 8.16603H15.7011Z"
+                        fill="white" />
+                    <path
+                        d="M43.196 0.538781V21.4485H38.4523V18.621C37.1898 20.7308 34.5355 21.9875 32.185 21.9875C26.0049 21.9875 21.7839 16.9174 21.7839 10.9937C21.7839 5.06992 26.0049 -0.000167847 32.185 -0.000167847C34.5355 -0.000167847 37.1898 1.25598 38.4523 3.3663V0.538781H43.196ZM38.4523 10.9937C38.4523 7.40449 36.1022 4.35219 32.4461 4.35219C28.8777 4.35219 26.5276 7.40449 26.5276 10.9937C26.5276 14.5828 28.8777 17.6346 32.4461 17.6346C36.1022 17.6346 38.4523 14.5828 38.4523 10.9937Z"
+                        fill="white" />
+                    <path
+                        d="M58.784 5.06982C58.0443 4.89156 57.6528 4.84556 56.9131 4.84556C52.8655 4.84556 50.6458 7.22404 50.6458 12.4285V21.4484H45.9021V0.538679H50.6458V3.90358C51.56 1.97361 54.2142 0.269989 56.9131 0.269989C57.6528 0.269989 58.2623 0.358335 58.784 0.583113V5.06982Z"
+                        fill="white" />
+                    <path
+                        d="M80.3491 22.4805C80.3491 25.9792 79.3046 28.4925 77.4327 30.1078C75.5618 31.7231 72.8629 32.4863 69.4684 32.4863C66.0734 32.4863 63.593 31.41 61.8955 29.7952C60.1985 28.1799 59.328 26.0257 59.1977 23.827H63.985C64.2466 26.0696 65.9872 28.0895 69.4253 28.0895C73.2117 28.0895 75.5182 26.4282 75.5182 22.4805V18.621C74.2557 20.7308 71.6014 21.9875 69.2504 21.9875C63.0703 21.9875 58.8499 16.9174 58.8499 10.9937C58.8499 5.06998 63.0703 -0.000114441 69.2504 -0.000114441C71.6014 -0.000114441 74.2557 1.25603 75.5182 3.36635V0.538834H80.2619L80.3491 22.4805ZM63.593 10.9937C63.593 14.5828 65.9431 17.6346 69.512 17.6346C73.1681 17.6346 75.5182 14.5828 75.5182 10.9937C75.5182 7.40454 73.1681 4.35224 69.512 4.35224C65.9431 4.35224 63.593 7.40454 63.593 10.9937Z"
+                        fill="white" />
+                    <path
+                        d="M81.9893 10.9936C81.9893 5.06987 86.2102 -0.000221252 92.6514 -0.000221252C99.1793 -0.000221252 103.401 5.06987 103.401 10.9936C103.401 16.9173 99.1793 21.9874 92.6514 21.9874C86.2102 21.9874 81.9893 16.9173 81.9893 10.9936ZM98.6576 10.9936C98.6576 7.40444 96.3075 4.35214 92.6514 4.35214C89.083 4.35214 86.733 7.40444 86.733 10.9936C86.733 14.5828 89.083 17.6351 92.6514 17.6351C96.3075 17.6351 98.6576 14.5828 98.6576 10.9936Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <div class="flex align-item-center desktop-hide no-wrap" role="group" aria-label="Contact and Search block">
+                <button class="search-button mx-1">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.2366 12.3542C13.2959 12.3929 13.3703 12.4255 13.424 12.479C14.5593 13.6108 15.6932 14.7441 16.8251 15.8793C17.1141 16.1692 17.1363 16.5341 16.892 16.8142C16.6231 17.1224 16.208 17.1306 15.8981 16.8231C15.1857 16.1162 14.4772 15.4052 13.7679 14.6951C13.2906 14.2172 12.8145 13.7381 12.3296 13.2512C10.6328 14.5936 8.73376 15.1299 6.60837 14.7198C4.85864 14.3821 3.44606 13.4754 2.37951 12.0518C0.240949 9.19728 0.626493 5.24668 3.26846 2.80111C5.79713 0.460377 9.79654 0.400669 12.4097 2.62456C15.1497 4.95635 15.8091 9.19654 13.2366 12.3542ZM7.9368 13.5172C11.0095 13.5147 13.5178 11.0069 13.526 7.9289C13.5343 4.85234 11.0099 2.32656 7.92863 2.3284C4.85772 2.33023 2.34381 4.84458 2.34042 7.91748C2.33703 11.0017 4.8535 13.5196 7.9368 13.5172Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <div class="contact-us">
+                    <a href="#" class="flex align-item-center" aria-label="Contact Us">
+                        Contact us
+                        <svg class="ml-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 1L15 8L8 15" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 8H15" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="hamburger ml-2" tabindex="0" tabindex="0" aria-label="Open Menu" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- Hamburger icon for mobile view -->
+
+            <ul class="nav-menu" role="menu" aria-label="Main Menu">
+                <button class="close-nav-menu" aria-label="Close Menu"><svg width="31" height="32" viewBox="0 0 31 32"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8.8147" y="7.17926" width="21.9246" height="3.02409"
+                            transform="rotate(45 8.8147 7.17926)" fill="#D9D9D9" />
+                        <rect x="24.3176" y="9.31763" width="21.9246" height="3.02409"
+                            transform="rotate(135 24.3176 9.31763)" fill="#D9D9D9" />
+                    </svg>
+                </button>
+                <li><a href="#" role="menuitem">About</a></li>
+                <li><a href="#" role="menuitem">Our Team</a></li>
+                <li class="services submenu-toggle ">
+                    <span class="flex align-item-center" role="menuitem" tabindex="0" aria-haspopup="true"
+                        aria-expanded="false">Services
+                        <svg class="carret"="13" height="8" viewBox="0 0 13 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2893 1.53009L6.34949 6.46991L1.40967 1.53009" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span>
+
+
+                    <!-- Submenu for Services -->
+                    <ul class="submenu no-wrap" role="menu" aria-label="Services Submenu">
+                        <div class="w-50 my-2">
+                            <li><a href="#" role="menuitem">Consulting</a></li>
+                            <li><a href="#" role="menuitem">Logistics</a></li>
+                            <li><a href="#" role="menuitem">Warehousing</a></li>
+                            <li><a href="#" role="menuitem">Warehousing</a></li>
+                            <li><a href="#" role="menuitem">Logistics</a></li>
+                        </div>
+                        <div class="w-50 my-2">
+                            <img src="kobu-agency-7okkFhxrxNw-unsplash.png" alt="agency image"
+                                aria-label="Image of an agency">
+                            <h4>some content</h4>
+                            <p>adf asdfasdf asdfasd</p>
+                        </div>
+
+                    </ul>
+                </li>
+                <li><a href="#" role="menuitem">News</a></li>
+                <li><a href="#" role="menuitem">Events</a></li>
+
+            </ul>
+            <div class="flex align-item-center mobile-hide" role="group" aria-label="Search and Contact">
+                <button class="search-button mx-1" aria-label="Search">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.2366 12.3542C13.2959 12.3929 13.3703 12.4255 13.424 12.479C14.5593 13.6108 15.6932 14.7441 16.8251 15.8793C17.1141 16.1692 17.1363 16.5341 16.892 16.8142C16.6231 17.1224 16.208 17.1306 15.8981 16.8231C15.1857 16.1162 14.4772 15.4052 13.7679 14.6951C13.2906 14.2172 12.8145 13.7381 12.3296 13.2512C10.6328 14.5936 8.73376 15.1299 6.60837 14.7198C4.85864 14.3821 3.44606 13.4754 2.37951 12.0518C0.240949 9.19728 0.626493 5.24668 3.26846 2.80111C5.79713 0.460377 9.79654 0.400669 12.4097 2.62456C15.1497 4.95635 15.8091 9.19654 13.2366 12.3542ZM7.9368 13.5172C11.0095 13.5147 13.5178 11.0069 13.526 7.9289C13.5343 4.85234 11.0099 2.32656 7.92863 2.3284C4.85772 2.33023 2.34381 4.84458 2.34042 7.91748C2.33703 11.0017 4.8535 13.5196 7.9368 13.5172Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <div class="contact-us">
+                    <a href="#" class="flex align-item-center" aria-label="Contact Us">
+                        Contact us
+                        <svg class="ml-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 1L15 8L8 15" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 8H15" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- carousel -->
+        <section class="carousel" role="region" aria-label="Image Carousel">
+            <div class="hero-slide" role="group" aria-roledescription="slide">
+                <div class="hero-text">
+                    <h1>This is our <br><span>Main Header</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum libero velit, sit
+                        amet suscipit mauris elementum id. Praesent interdum a ante ut dapibus.</p>
+                    <a href="#" class="flex align-item-center" aria-label="Find out more">
+                        <div class="find-more">Find out more</div>
+                        <svg class="ml-2" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 1L15 8L8 15" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 8H15" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <img src="christina-wocintechchat-com-L85a1k-XqH8-unsplash.png" alt="Woman with tablet"
+                        aria-label="Image of a woman with a tablet">
+                    <div class="overlay" aria-hidden="true"></div>
+                </div>
+            </div>
+            <div class="hero-slide" role="group" aria-roledescription="slide">
+                <div class="hero-text">
+                    <h1>And this is a <br><span>Second Header</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum libero velit, sit
+                        amet suscipit mauris elementum id. Praesent interdum a ante ut dapibus.</p>
+                    <a href="#" class="flex align-item-center" aria-label="Find out more">
+                        <div class="find-more">Find out more</div>
+                        <svg class="ml-2" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 1L15 8L8 15" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 8H15" stroke="black" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <img src="brooke-cagle-NoRsyXmHGpI-unsplash.png" alt="Woman smiling"
+                        aria-label="Image of a woman smiling">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="carousel-dots">
+                <span role="button" class="dot" onclick="currentSlide(1)" tabindex="0"
+                    onkeydown="handleKeyDown(event, 1)"></span>
+                <span role="button" class="dot" onclick="currentSlide(2)" tabindex="0"
+                    onkeydown="handleKeyDown(event, 2)"></span>
+            </div>
+        </section>
+
+        <div class="dummy-section">
+            <h2>some content to scroll down</h2>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            const slides = document.querySelectorAll('.hero-slide');
+            const dots = document.querySelectorAll('.dot');
+            const header = document.querySelector('.navbar');
+            const stickyOffset = header.offsetTop;
+            const submenuToggle = document.querySelector('.submenu-toggle span');
+            const submenu = document.querySelector('.submenu-toggle');
+            const closeNavMenu = document.querySelector('.close-nav-menu');
+
+            function toggleSubmenu() {
+                submenu.classList.toggle('active');
+            }
+
+            // Toggle submenu on click
+            submenuToggle.addEventListener('click', function (event) {
+                event.stopPropagation(); // Prevent click event from propagating to document
+                toggleSubmenu();
+            });
+
+            // Toggle submenu on Enter or Space key press
+            submenuToggle.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault(); // Prevent default action for space to avoid scrolling
+                    toggleSubmenu();
+                    submenuToggle.focus(); // Ensure focus stays on the toggle
+                }
+            });
+
+            // Close submenu when clicking outside, but ignore clicks on submenuToggle or submenu
+            document.addEventListener('click', function (event) {
+                if (!submenu.contains(event.target) && !submenuToggle.contains(event.target)) {
+                    submenu.classList.remove('active');
+                }
+            });
+
+            // Close submenu when focus is lost from both submenuToggle and submenu
+            document.addEventListener('focusin', function (event) {
+                if (!submenu.contains(event.target) && !submenuToggle.contains(event.target)) {
+                    submenu.classList.remove('active');
+                }
+            });
+
+            function toggleStickyClass() {
+                if (window.pageYOffset > stickyOffset) {
+                    header.classList.add('sticky-header');
+                } else {
+                    header.classList.remove('sticky-header');
+                }
+            }
+
+            window.addEventListener('scroll', toggleStickyClass);
+
+
+
+
+            hamburger.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+                document.querySelector('body').classList.add('fixed')
+            });
+            closeNavMenu.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+                document.querySelector('body').classList.remove('fixed')
+            });
+
+            let slideIndex = 0;
+            let autoSlideInterval;
+
+            function showSlides(n) {
+                if (n >= slides.length) {
+                    slideIndex = 0;
+                } else if (n < 0) {
+                    slideIndex = slides.length - 1;
+                } else {
+                    slideIndex = n;
+                }
+
+                slides.forEach((slide, index) => {
+                    slide.classList.remove('active');
+                    dots[index].classList.remove('active');
+                });
+
+                slides[slideIndex].classList.add('active');
+                dots[slideIndex].classList.add('active');
+            }
+
+            function nextSlide() {
+                showSlides(slideIndex + 1);
+            }
+
+            function prevSlide() {
+                showSlides(slideIndex - 1);
+            }
+
+            function currentSlide(n) {
+                showSlides(n);
+                resetAutoSlide();
+            }
+
+            function resetAutoSlide() {
+                clearInterval(autoSlideInterval);
+                autoSlideInterval = setInterval(nextSlide, 10000);
+            }
+
+            function handleKeyDown(event, slideIndex) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault(); // Prevent default action for space to avoid scrolling
+                    currentSlide(slideIndex);
+                }
+            }
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentSlide(index);
+                });
+                dot.addEventListener('keydown', (event) => handleKeyDown(event, index));
+            });
+
+            // Initialize slide show
+            resetAutoSlide();
+            showSlides(slideIndex);
+        });
+    </script>
+</body>
+
+</html>
